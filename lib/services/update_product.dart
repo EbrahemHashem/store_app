@@ -1,15 +1,17 @@
+// ignore_for_file: missing_required_param
+
 import 'package:store_app/helper/api.dart';
 import 'package:store_app/models/product_model.dart';
 
-class UpdateProduct{
-   Future<ProductModel> updateProduct({
+class UpdateProduct {
+  Future<ProductModel> updateProduct({
     required String title,
     required String price,
     required String description,
     required String image,
     required String categoryy,
   }) async {
-    Map<String, dynamic> data =await Api().post(
+    Map<String, dynamic> data = await Api().post(
       url: 'https://fakestoreapi.com/products',
       body: {
         'title': title,
