@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:store_app/pages/home_page.dart';
 import 'package:store_app/pages/update_produdt_page.dart';
 
-// test git
 void main() {
   runApp(const StoreApp());
 }

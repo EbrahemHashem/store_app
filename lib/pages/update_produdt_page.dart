@@ -23,6 +23,9 @@ class UpdatePage extends StatelessWidget {
           CustomFormTextField(
             hintText: 'product name',
           ),
+          CustomFormTextField(hintText: 'description'),
+          CustomFormTextField(hintText: 'price'),
+          CustomFormTextField(hintText: 'image'),
           CustomButton(Title: 'Title')
         ],
       ),

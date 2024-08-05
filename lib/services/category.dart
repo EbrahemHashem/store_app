@@ -1,4 +1,3 @@
-
 // ignore_for_file: missing_required_param
 
 import 'package:store_app/helper/api.dart';
@@ -6,8 +5,7 @@ import 'package:store_app/models/product_model.dart';
 
 class CategoryService {
   Future<List<ProductModel>> getCategory({required String categoryName}) async {
-    List<dynamic> data = await Api()
-        .get(url: 'https://fakestoreapi.com/products/category/$categoryName');
+    List<dynamic> data = await Api().get(url: 'https://fakestoreapi.com/products/category/$categoryName');
 
     List<ProductModel> productsList = [];
 
